@@ -1,13 +1,7 @@
-
-
 import java.util.ArrayList;
 
 public class Cart {
-    private ArrayList<Item> items; // Composition: كلاس Item مستخدم جوه ArrayList
-
-    public Cart() {
-        this.items = new ArrayList<>();
-    }
+    private ArrayList<Item> items = new ArrayList<>();
 
     public void addItem(Item item) {
         items.add(item);
@@ -17,7 +11,6 @@ public class Cart {
         return items;
     }
 
-    // ميثود لحساب السعر الإجمالي للمنتجات داخل العربة
     public double calculateTotal() {
         double total = 0;
         for (Item item : items) {

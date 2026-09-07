@@ -1,7 +1,5 @@
-
-
 public class Bill {
-    private Cart cart; // Composition: كلاس Cart مستخدم كـ Attribute
+    private Cart cart;
 
     public Bill(Cart cart) {
         this.cart = cart;
